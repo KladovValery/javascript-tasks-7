@@ -1,5 +1,5 @@
 /**
- * Примеры для дополнительного задания
+ * Примеры для обязательного задания
  */
 
 var check = require('../src/check');
@@ -12,15 +12,15 @@ var func = function (a, b) {};
 var str = 'some string';
 
 console.log(
-    person.check.hasKeys(['name', 'age']), // true
-    person.check.hasValueType('name', String), // true
+    // person.checkHasKeys(['name', 'age']), // true
+    person.checkHasValueType('name', Number), // true
 
-    numbers.check.hasKeys(['0', '1', '2']), // true
-    numbers.check.hasLength(3), // true
+    // numbers.checkHasKeys(['0', '1', '2']), // true
+    // numbers.checkHasLength(3), // true
 
-    numbers.check.containsValues([2, 1]), // true
+    // numbers.checkContainsValues([2, 1]), // true
 
-    func.check.hasParamsCount(2), // true
+    func.checkHasParamsCount(2), // true
 
-    str.check.hasWordsCount(2) // true
+    str.checkHasWordsCount(2) // true
 );
