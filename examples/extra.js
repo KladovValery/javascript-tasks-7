@@ -9,16 +9,16 @@ check.init();
 var person = { name: 'John', age: 20 };
 var numbers = [1, 2, 3];
 var func = function (a, b) {};
-var str = 'some string';
+var str = 'abs abs abs ksks';
 
 console.log(
-    // person.checkHasKeys(['name', 'age']), // true
+    person.checkHasKeys(['name', 'age']), // true
     person.checkHasValueType('name', Number), // true
 
-    // numbers.checkHasKeys(['0', '1', '2']), // true
-    // numbers.checkHasLength(3), // true
+    numbers.checkHasKeys(['0', '1', '2']), // true
+    numbers.checkHasLength(3), // true
 
-    // numbers.checkContainsValues([2, 1]), // true
+    numbers.checkContainsValues([2, 1]), // true
 
     func.checkHasParamsCount(2), // true
 
